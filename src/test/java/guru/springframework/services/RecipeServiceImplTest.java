@@ -84,12 +84,7 @@ public class RecipeServiceImplTest {
         HashSet recipesData = new HashSet();
         recipesData.add(recipe);
 
-<<<<<<< HEAD
         when(recipeRepository.findAll()).thenReturn(recipesData);
-=======
-        //when(recipeService.getRecipes()).thenReturn(receipesData);
-        when(recipeRepository.findAll()).thenReturn(receipesData);
->>>>>>> remotes/origin/delete-recipe
 
         Set<Recipe> recipes = recipeService.getRecipes();
 
