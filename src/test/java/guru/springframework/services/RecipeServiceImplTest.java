@@ -81,10 +81,11 @@ public class RecipeServiceImplTest {
     public void getRecipesTest() throws Exception {
 
         Recipe recipe = new Recipe();
-        HashSet recipesData = new HashSet();
-        recipesData.add(recipe);
+        HashSet receipesData = new HashSet();
+        receipesData.add(recipe);
 
-        when(recipeRepository.findAll()).thenReturn(recipesData);
+        //when(recipeService.getRecipes()).thenReturn(receipesData);
+        when(recipeRepository.findAll()).thenReturn(receipesData);
 
         Set<Recipe> recipes = recipeService.getRecipes();
 
